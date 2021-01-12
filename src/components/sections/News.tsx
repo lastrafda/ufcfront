@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import New from "../../components/articles/New";
 import { INew } from "../../services/news.service";
 
