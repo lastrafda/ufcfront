@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Home, Rankings } from "./pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { BotomNav, Header } from "./components/layout";
+import { BotomNav, Header } from "./components/layouts";
 
 const App: React.FunctionComponent<unknown> = () => {
   return (
@@ -16,6 +16,7 @@ const App: React.FunctionComponent<unknown> = () => {
             <Home />
           </Route>
         </Switch>
+        <div style={{ height: "70px" }}></div>
         <BotomNav />
       </Router>
     </>
