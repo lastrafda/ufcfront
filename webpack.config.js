@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
@@ -50,7 +51,7 @@ module.exports = function (_env, argv) {
           ],
         },
         {
-          test: /\.(png|jpg|gif)$/i,
+          test: /\.(png|jpg|jpeg|gif)$/i,
           use: {
             loader: "url-loader",
             options: {
