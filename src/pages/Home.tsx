@@ -12,9 +12,9 @@ export const Home: React.FunctionComponent<unknown> = () => {
     });
   }, []);
   return (
-    <main className="bg-gray-800 px-8 py-4 text-white font-bold">
+    <main className="bg-gray-800 p-4 text-white font-bold">
       <article>
-        <span className="text-sm">Next Event</span>
+        <span className="text-sm"># Next Event</span>
         <h1 className="text-yellow-500 text-xl font-extrabold py-4">
           UFC 257 - 24th January
         </h1>

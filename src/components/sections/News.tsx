@@ -9,7 +9,8 @@ interface Props {
 const NewsSection: React.FunctionComponent<Props> = ({ news }) => {
   return (
     <section className="py-4" aria-label="News">
-      <h2>News</h2>
+      <h2># News</h2>
+      {/* TODO: maybe I should use composition (child) and a title prop */}
       {news.map((n: INew) => (
         <New
           headline={n.headline}
