@@ -27,7 +27,7 @@ const news: INew[] = [
 ];
 
 export const getNews = (): Promise<INew[]> => {
-  return new Promise<INew[]>((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     try {
       setTimeout(() => {
         resolve(news);
