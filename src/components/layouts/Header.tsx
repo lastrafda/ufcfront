@@ -1,7 +1,7 @@
 import * as React from "react";
 import { NavLink } from "react-router-dom";
 
-export const Header: React.FunctionComponent<unknown> = () => {
+export const Header: React.FC = () => {
   return (
     <nav className="bg-gray-900 mx-auto">
       <ul className="flex flex-row justify-between px-4 h-20">

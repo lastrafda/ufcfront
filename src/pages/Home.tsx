@@ -4,7 +4,7 @@ import piorierMcGregorPoster from "../assets/img/poirier-mcgregor2-2.jpeg";
 import NewsSection from "../components/sections/News";
 import { getNews, INew } from "../services/news.service";
 
-export const Home: React.FunctionComponent<unknown> = () => {
+export const Home: React.FC = () => {
   const [news, setNews] = React.useState<INew[]>([]);
   React.useEffect(() => {
     getNews().then((news: INew[]) => {

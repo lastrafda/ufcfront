@@ -35,7 +35,7 @@ const links = [
   },
 ];
 
-export const BotomNav: React.FunctionComponent<unknown> = () => {
+export const BotomNav: React.FC = () => {
   return (
     <nav className="bg-gray-900 fixed bottom-0 left-0 w-full py-4">
       <ul className="grid grid-cols-4">

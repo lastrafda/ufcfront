@@ -1,7 +1,7 @@
 import * as React from "react";
 
 // TODO: USE CSS GRID IN ALL RESOLUTIONS
-export const Rankings: React.FunctionComponent<unknown> = () => {
+export const Rankings: React.FC = () => {
   return (
     <main className="bg-gray-800 p-4 text-white font-bold">
       <h1 className="text-yellow-500 text-xl font-extrabold py-4">Rankings</h1>
@@ -18,10 +18,10 @@ export const Rankings: React.FunctionComponent<unknown> = () => {
               </div>
             </li>
             <li className="p-4 mb-2 border rounded-lg border-transparent bg-gray-700">
-              Jon Jones (v/)(v/)(v/)
+              Jon Jones
             </li>
             <li className="p-4 border rounded-lg border-transparent bg-gray-700">
-              Stipe (x)(v/)(v/)
+              Stipe
             </li>
           </ol>
         </article>
