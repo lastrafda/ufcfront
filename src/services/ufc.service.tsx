@@ -61,7 +61,7 @@ export interface IRankings {
 
 const rankings: IRankings[] = rankingsJson;
 
-export const getRankings = (): Promise<IRankings[]> => {
+const getRankings = async (): Promise<IRankings[]> => {
   return new Promise((resolve, reject) => {
     try {
       setTimeout(() => {
@@ -71,4 +71,8 @@ export const getRankings = (): Promise<IRankings[]> => {
       reject("This will never happen");
     }
   });
+};
+
+export default {
+  getRankings,
 };
