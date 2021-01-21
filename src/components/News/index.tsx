@@ -1,12 +1,13 @@
 import React from "react";
-import New from "../../components/articles/New";
+
 import { INew } from "../../services/news.service";
+import New from "../New";
 
 interface Props {
   news: Array<INew>;
 }
 
-const NewsSection: React.FunctionComponent<Props> = ({ news }) => {
+const News: React.FunctionComponent<Props> = ({ news }) => {
   return (
     <section className="py-4" aria-label="News">
       <h2># News</h2>
@@ -24,4 +25,4 @@ const NewsSection: React.FunctionComponent<Props> = ({ news }) => {
   );
 };
 
-export default NewsSection;
+export default News;

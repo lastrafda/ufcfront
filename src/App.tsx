@@ -1,7 +1,8 @@
 import * as React from "react";
 import { Home, Rankings } from "./pages";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { BotomNav, Header } from "./components/layouts";
+import BotomNav from "./components/BottomNav";
+import Header from "./components/Header";
 
 const App: React.FunctionComponent<unknown> = () => {
   return (

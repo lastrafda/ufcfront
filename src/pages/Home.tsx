@@ -1,7 +1,7 @@
 import * as React from "react";
 import piorierMcGregorPoster from "../assets/img/poirier-mcgregor2-2.jpeg";
+import News from "../components/News";
 
-import NewsSection from "../components/sections/News";
 import { getNews, INew } from "../services/news.service";
 
 export const Home: React.FC = () => {
@@ -24,7 +24,7 @@ export const Home: React.FC = () => {
           className="w-full"
         />
       </article>
-      <NewsSection news={news} />
+      <News news={news} />
     </main>
   );
 };
