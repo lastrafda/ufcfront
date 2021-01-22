@@ -14,7 +14,7 @@ export const Rankings: React.FC = () => {
   return (
     <main className="bg-gray-800 p-4 text-white font-bold">
       <h1 className="text-yellow-500 text-xl font-extrabold py-4">Rankings</h1>
-      <section className="grid">
+      <section className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {rankings.length &&
           rankings.map(({ fighters, division }, index) => (
             <RankingList key={index} fighters={fighters} name={division} />
