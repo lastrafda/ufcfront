@@ -10,14 +10,20 @@ const RankingList: React.FC<Props> = ({ fighters, name }) => {
     <article>
       <h2 className="py-4">{`# ${name}`}</h2>
       <ol>
-        {/* border-2 border-purple-800 rounded-lg */}
         {fighters.map(({ fullname, description }, index) => (
           <li
             key={index}
             className="p-4 mb-2 justify-between border rounded-lg border-transparent bg-gray-700"
           >
             <div className="inline-flex w-full justify-between">
-              <div className="rank-1">{fullname}</div>
+              <div>
+                {index === 0 ? (
+                  <span className="pr-3 pl-2 text-yellow-400 font-bold">C</span>
+                ) : (
+                  <span className="pr-4">{`#${index}`}</span>
+                )}
+                {fullname}
+              </div>
               <div>{description.match(/\d+-\d+-\d+/)}</div>
             </div>
           </li>
