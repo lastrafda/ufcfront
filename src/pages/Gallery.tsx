@@ -9,16 +9,17 @@ import amandaNunesChampChamp from "../assets/img/amanda-nunes-champ-champ.jpg";
 import jonJones from "../assets/img/jon-jones.jpg";
 import jorgeMasvidal from "../assets/img/jorge-masvidal.png";
 import israelAdesanya from "../assets/img/israel-adesanya.jpg";
-import janBlachowicz from "../assets/img/jan-blachowicz.jpg";
-import janBlachowicz2 from "../assets/img/jan-blachowicz2.jpg";
+import janBlachowicz from "../assets/img/jan-blachowicz2.jpg";
 
 const Gallery: React.FC = () => {
   return (
-    <main className="bg-gray-800 py-4 px-2 text-white font-bold h-full">
-      {/* <h1 className="text-yellow-500 text-xl font-extrabold py-4">Gallery</h1> */}
-      <div className="h-full grid grid-cols-3 grid-rows-5 gap-1">
+    <main className="bg-gray-800 py-4 px-2 text-white font-bold min-h-full">
+      <h1 className="text-yellow-500 text-xl font-extrabold py-4 md:max-w-5xl mx-auto">
+        Gallery
+      </h1>
+      <div className="min-h-full sm:max-w-5xl md:max-w-5xl md:mx-auto grid grid-cols-3 grid-rows-5 gap-1">
         <img
-          className="rounded-lg shadow-md col-span-2 h-full p-0 w-full z-10"
+          className="rounded-lg shadow-md col-span-2 h-full  p-0 w-full z-10"
           src={conorMcGregor}
           alt="Conor McGregor posing for the cameras."
         />
@@ -70,7 +71,7 @@ const Gallery: React.FC = () => {
         />
         <img
           className="rounded-lg shadow-md h-full p-0 bg-contain w-full"
-          src={janBlachowicz2}
+          src={janBlachowicz}
           alt="Jan Blachowicz posing after winning the belt."
         />
       </div>
